@@ -1,4 +1,4 @@
-<h1 align="center">Laporan Praktikum Modul 1 - Code::Blocks IDE & Pengenalan Bahasa C++ (Bagian Pertama)</h1>
+<h1 align="center">Laporan Praktikum Modul 1 - CodeBlocks IDE & Pengenalan Bahasa C++ (Bagian Pertama)</h1>
 
 <p align="center">Akhmad Noval Annur - 109082500100 - S1IF-13-04</p>
 
