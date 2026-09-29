@@ -1,15 +1,15 @@
 #include <iostream>
 
 int main() {
-    double total;
+    double nilaiBelanja;
     std::cout << "Total pembelian: Rp";
-    if (!(std::cin >> total) || total < 0) return 1;
-    double diskon;
-    if (total >= 100000) {
-        diskon = 0.05 * total;
+    if (!(std::cin >> nilaiBelanja) || nilaiBelanja < 0) return 1;
+    double potonganHarga;
+    if (nilaiBelanja >= 100000) {
+        potonganHarga = nilaiBelanja * 5 / 100;
     } else {
-        diskon = 0;
+        potonganHarga = 0;
     }
-    std::cout << "Besar diskon = Rp" << diskon << '\n';
+    std::cout << "Besar diskon = Rp" << potonganHarga << '\n';
     return 0;
 }

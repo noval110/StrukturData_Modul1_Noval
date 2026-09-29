@@ -1,20 +1,26 @@
 #include <iostream>
 
 int main() {
-    float pertama, kedua;
+    float nilaiKiri, nilaiKanan;
     std::cout << "Masukkan dua bilangan: ";
-    if (!(std::cin >> pertama >> kedua)) {
+    if (!(std::cin >> nilaiKiri >> nilaiKanan)) {
         std::cerr << "Input harus berupa dua bilangan.\n";
         return 1;
     }
 
-    std::cout << "Penjumlahan = " << pertama + kedua << '\n';
-    std::cout << "Pengurangan = " << pertama - kedua << '\n';
-    std::cout << "Perkalian   = " << pertama * kedua << '\n';
-    if (kedua == 0.0f) {
+    const float jumlah = nilaiKiri + nilaiKanan;
+    const float selisih = nilaiKiri - nilaiKanan;
+    const float hasilKali = nilaiKiri * nilaiKanan;
+
+    std::cout << "Penjumlahan = " << jumlah << '\n'
+              << "Pengurangan = " << selisih << '\n'
+              << "Perkalian   = " << hasilKali << '\n';
+
+    if (nilaiKanan == 0.0f) {
         std::cout << "Pembagian  = tidak terdefinisi (pembagi nol)\n";
     } else {
-        std::cout << "Pembagian  = " << pertama / kedua << '\n';
+        const float hasilBagi = nilaiKiri / nilaiKanan;
+        std::cout << "Pembagian  = " << hasilBagi << '\n';
     }
     return 0;
 }

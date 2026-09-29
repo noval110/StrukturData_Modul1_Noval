@@ -1,9 +1,11 @@
 #include <iostream>
 
 int main() {
-    int jumlah;
+    int banyakUlangan;
     std::cout << "Jumlah perulangan: ";
-    if (!(std::cin >> jumlah) || jumlah < 0) return 1;
-    for (int i = 0; i < jumlah; ++i) std::cout << "saya pintar\n";
+    if (!(std::cin >> banyakUlangan) || banyakUlangan < 0) return 1;
+    for (int urutan = 1; urutan <= banyakUlangan; ++urutan) {
+        std::cout << urutan << ". Saya belajar C++\n";
+    }
     return 0;
 }

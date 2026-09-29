@@ -1,8 +1,11 @@
 #include <iostream>
 
 int main() {
-    int w = 1, x = 7, y = 3;
-    float z = (x + y) / (y + w); // Pembagian integer menghasilkan 2.
-    std::cout << "Nilai z = " << z << '\n';
+    int angkaUtama = 9;
+    int tambahan = 4;
+    int pembagiAwal = 3;
+    int pembagiLain = 2;
+    float hasil = (angkaUtama + tambahan) / (pembagiAwal + pembagiLain);
+    std::cout << "Hasil pembagian integer = " << hasil << '\n';
     return 0;
 }

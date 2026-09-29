@@ -1,10 +1,10 @@
 #include <iostream>
 
 int main() {
-    int kode;
+    int nomorHari;
     std::cout << "Kode hari (1=Senin, ..., 7=Minggu): ";
-    if (!(std::cin >> kode)) return 1;
-    switch (kode) {
+    if (!(std::cin >> nomorHari)) return 1;
+    switch (nomorHari) {
         case 1: case 2: case 3: case 4: case 5:
             std::cout << "Hari Kerja\n";
             break;

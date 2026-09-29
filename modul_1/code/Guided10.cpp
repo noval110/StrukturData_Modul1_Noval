@@ -1,23 +1,24 @@
 #include <iostream>
 #include <string>
 
-struct Siswa {
-    std::string nama;
-    int nilai;
+struct CatatanNilai {
+    std::string namaLengkap;
+    int skor;
 };
 
 int main() {
-    const int jumlah = 5;
-    Siswa siswa[jumlah];
-    for (int i = 0; i < jumlah; ++i) {
-        std::cout << "Data ke-" << i + 1 << "\nNama: ";
-        std::getline(std::cin >> std::ws, siswa[i].nama);
+    const int kapasitas = 5;
+    CatatanNilai daftar[kapasitas];
+    for (int posisi = 0; posisi < kapasitas; ++posisi) {
+        std::cout << "Data ke-" << posisi + 1 << "\nNama: ";
+        std::getline(std::cin >> std::ws, daftar[posisi].namaLengkap);
         std::cout << "Nilai: ";
-        if (!(std::cin >> siswa[i].nilai)) return 1;
+        if (!(std::cin >> daftar[posisi].skor)) return 1;
     }
     std::cout << "\nData siswa\n";
-    for (int i = 0; i < jumlah; ++i) {
-        std::cout << i + 1 << ". " << siswa[i].nama << " - " << siswa[i].nilai << '\n';
+    for (int posisi = 0; posisi < kapasitas; ++posisi) {
+        std::cout << posisi + 1 << ". " << daftar[posisi].namaLengkap
+                  << " - " << daftar[posisi].skor << '\n';
     }
     return 0;
 }

@@ -1,14 +1,15 @@
 #include <iostream>
 
-float celsiusKeFahrenheit(float celsius) {
-    return celsius * 1.8f + 32.0f;
+float ubahSuhu(float derajatC) {
+    return (derajatC * 9.0f / 5.0f) + 32.0f;
 }
 
 int main() {
-    float celsius;
+    float suhuCelsius;
     std::cout << "Nilai Celsius: ";
-    if (!(std::cin >> celsius)) return 1;
-    std::cout << celsius << " Celsius adalah "
-              << celsiusKeFahrenheit(celsius) << " Fahrenheit\n";
+    if (!(std::cin >> suhuCelsius)) return 1;
+    const float suhuFahrenheit = ubahSuhu(suhuCelsius);
+    std::cout << suhuCelsius << " Celsius adalah "
+              << suhuFahrenheit << " Fahrenheit\n";
     return 0;
 }

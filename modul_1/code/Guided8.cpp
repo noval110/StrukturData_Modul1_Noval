@@ -1,13 +1,13 @@
 #include <iostream>
 
 int main() {
-    int jumlah;
+    int banyakBaris;
     std::cout << "Masukkan banyak baris: ";
-    if (!(std::cin >> jumlah) || jumlah < 0) return 1;
-    int i = 1;
-    while (i <= jumlah) {
-        std::cout << "baris ke-" << i << '\n';
-        ++i;
+    if (!(std::cin >> banyakBaris) || banyakBaris < 0) return 1;
+    int nomorBaris = 1;
+    while (nomorBaris <= banyakBaris) {
+        std::cout << "baris ke-" << nomorBaris << '\n';
+        ++nomorBaris;
     }
     return 0;
 }
