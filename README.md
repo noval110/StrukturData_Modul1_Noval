@@ -15,16 +15,7 @@ modul_1/
 │   ├── Guided1.cpp ... Guided11.cpp
 │   └── Unguided1.cpp ... Unguided3.cpp
 └── output/
-    ├── output1.png
-    ├── output2.png
-    └── output3.png
+    ├── unguided1.png
+    ├── unguided2.png
+    └── unguided3.png
 ```
-
-Tiga file `Unguided` menjawab bagian **1.11 Latihan** pada modul. Setiap file dapat dikompilasi dan dijalankan secara terpisah, misalnya:
-
-```powershell
-g++ -std=c++17 -Wall -Wextra -pedantic modul_1/code/Unguided1.cpp -o Unguided1.exe
-./Unguided1.exe
-```
-
-Lihat [laporan Modul 1](modul_1/Laprak.md) untuk penjelasan dan contoh hasil.
