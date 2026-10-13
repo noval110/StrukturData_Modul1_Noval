@@ -363,10 +363,8 @@ Driver mengikuti data dan urutan pemanggilan pada modul: membuat variabel `namap
 const int UKURAN = 3;
 
 void tampilArray(const int data[][UKURAN]);
-// Indeks baris/kolom berbasis 0; false jika salah satu indeks di luar 0..2.
 bool tukarElemen(int a[][UKURAN], int b[][UKURAN],
                  int barisA, int kolomA, int barisB, int kolomB);
-// Prasyarat: a dan b menunjuk variabel int yang masih hidup.
 void tukarPointer(int* a, int* b);
 
 #endif
