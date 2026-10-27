@@ -1,4 +1,4 @@
-# Laporan Praktikum Modul 5 - Singly Linked List 
+<h1 align="center">Laporan Praktikum Modul 5 - Singly Linked List</h1>
 
 <p align="center">Akhmad Noval Annur - 109082500100 - S1IF-13-04</p>
 
